@@ -1,0 +1,13 @@
+.award {
+    text-align: justify;
+    width: 25vw;
+    min-height: 300px;
+     
+  }
+
+
+.see-all {
+    font-size: 14px;
+    padding-right: 5px;
+    align-items: flex-start;
+  }

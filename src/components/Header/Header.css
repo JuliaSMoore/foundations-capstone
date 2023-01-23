@@ -1,0 +1,20 @@
+.header-panel {
+    background-color: rgb(193, 181, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1030;
+    width: 100%;
+    padding: 1vh;
+}
+
+.navigation-profile {
+    display: flex;
+    align-items: center;
+    flex-basis: 60vw;
+    justify-content: end;
+    gap: 20px;
+  }

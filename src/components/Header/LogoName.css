@@ -1,0 +1,9 @@
+.logo-name {
+    /* flex-basis: 30vw; */
+    flex-shrink: 1;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 50px;
+}

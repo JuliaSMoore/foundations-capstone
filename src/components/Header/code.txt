@@ -1,0 +1,50 @@
+import './App.css'
+import React, { useState } from 'react'
+
+const list = [
+  'julia',
+  'taylor',
+  'jared',
+  'alec',
+  'alex',
+  'juliette',
+  'tyler',
+  'jordan'
+]
+
+function App() {
+  let [searchTerm, setSearchTerm] = useState('')
+
+  function onSearchTermChange(event) {
+    setSearchTerm(event.target.value)
+  }
+
+  return (
+    <div className="App">
+      <label>Filter list:</label>
+      <input
+        value={searchTerm}
+        onChange={onSearchTermChange}
+      />
+      <div>
+        { 
+          list
+          .filter((name) => {
+            if (name.includes(searchTerm)) {
+              return true
+            } else {
+              return false
+            }
+          })
+          .map((name) => {
+            return <span>
+              {name}
+            </span>
+          })
+        }
+      </div>
+    </div>
+  )
+}
+
+export default App

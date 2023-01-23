@@ -1,0 +1,14 @@
+.last {
+
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    box-sizing: border-box;
+    min-height: 300px;
+  }
+
+  .see-all {
+    font-size: 14px;
+    padding-right: 5px;
+    align-items: flex-start;
+  }

@@ -1,0 +1,17 @@
+.categories {
+    width: 80%;
+    min-height: 300px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-slider {
+    width: 25% !important;
+    margin: auto !important;
+}
+
+.control-dots {
+    padding-top: 30px !important;
+    margin-top: 10px !important;
+}

@@ -1,0 +1,13 @@
+.wrapper {
+    min-height: calc(96vh); 
+    margin: auto;
+    margin-top: 10vh;
+    width: 90%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+}
