@@ -45,7 +45,25 @@ module.exports = {
     };
     id++;
 
+    let bookId = newStory.id
     bookDB.push(newStory);
-    res.send(bookDB);
+    res.status(200).send({id: bookId});
   },
+
+  getBook: (req, res) => {
+    const {id} = req.params
+    let index
+    console.log(id)
+    for (let i = 0; i < bookDB.length; i++) {
+      if (bookDB[i].id === +id) {
+        index = i
+      }
+    }
+
+    if (index) {
+      res.status(200).send(bookDB[index])
+    } else {
+      res.sendStatus(400)
+    }
+  }
 };

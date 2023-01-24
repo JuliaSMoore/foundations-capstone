@@ -1,19 +1,19 @@
 import React from "react";
 import Header from "../Header/Header";
 import LinkBlock from "../Footer/LinkBlock";
-import AddForm from "../AddStory/AddForm";
 import Reader from "../Read/Reader";
 
-const Add = () => {
+const Read = () => {
+
+
     return (
         <div>
-        <div className="wrapper">
             <Header />
-        <AddForm />
-        </div>
-        <LinkBlock />
-        </div>
+            <Reader />
+            <LinkBlock />
+            </div>
     )
+
 }
 
-export default Add
+export default Read

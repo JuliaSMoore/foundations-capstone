@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const AddForm = () => {
   const [title, setTitle] = useState("");
@@ -9,6 +10,8 @@ const AddForm = () => {
   const [romanceTag, setRomanceTag] = useState(false);
   const [cover, setCover] = useState("");
   const [content, setContent] = useState("");
+
+  const navigate = useNavigate()
 
   const onTitleChange = (event) => {
     setTitle(event.target.value);
@@ -64,7 +67,8 @@ const AddForm = () => {
     axios
       .post("http://localhost:4000/api/books", newStory)
       .then((res) => {
-        console.log(res.data);
+        navigate(`/read/${res.data.id}`);
+        console.log(res.data)
       })
       .catch((err) => {
         console.log(err);

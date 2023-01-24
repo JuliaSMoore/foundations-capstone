@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import './Popular.css'
 import HeadContainer from "../UI/HeadContainer";
 import axios from "axios";
@@ -6,6 +7,8 @@ import axios from "axios";
 const Popular = () => {
 
 const [popularBooks, setPopularBooks] = useState('')
+
+    const navigate = useNavigate()
 
     useEffect(() => {
         console.log('hey')
@@ -15,6 +18,11 @@ const [popularBooks, setPopularBooks] = useState('')
         })
     }, [])
 
+
+
+    const readPageHandler = (id) => {
+        navigate(`/read/${id}`)
+    }
 
     return (
         <div className="popular">
@@ -28,7 +36,7 @@ const [popularBooks, setPopularBooks] = useState('')
                 popularBooks
                 .filter((books) => {return books.tags.includes("Popular")})
                 .map((element) => {
-                    return <div key={element.id} className="book-container">
+                    return <div key={element.id} className="book-container" onClick={() => {readPageHandler(element.id)}}>
                         <img className="cover" src={element.cover} ></img>
                         {element.title}
                         {element.description}
