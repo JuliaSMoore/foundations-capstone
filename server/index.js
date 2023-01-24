@@ -5,6 +5,7 @@ let cors = require ('cors')
 
 const { getBooks, postAStory } = require("./controller.js");
 
+app.use(express.json())
 app.use(cors())
 app.use(express.static(`${__dirname}/public`));
 

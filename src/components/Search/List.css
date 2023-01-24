@@ -1,0 +1,7 @@
+.cover {
+    width: 150px;
+}
+
+.book-container {
+    display: flex;
+}

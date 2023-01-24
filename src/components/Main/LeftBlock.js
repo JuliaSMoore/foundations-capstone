@@ -8,10 +8,10 @@ import Popular from "./Popular";
 const LeftBlock = () => {
     return (
         <section className="left-blocks">
-            <Last />
+            {/* <Last /> */}
             <div className="award-rec">
-            <Award />
-            <Recommendations />
+            {/* <Award /> */}
+            {/* <Recommendations /> */}
             </div>
             <Popular />
         </section>

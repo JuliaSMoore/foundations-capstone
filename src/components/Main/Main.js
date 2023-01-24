@@ -10,7 +10,7 @@ const Main = () => {
         <Categories />
         <div className="main-container">
         <LeftBlock />
-        <RightBlock />
+        {/* <RightBlock /> */}
         </div>
 
     </div>
