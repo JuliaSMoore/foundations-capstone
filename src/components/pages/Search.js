@@ -10,7 +10,7 @@ const Search = () => {
     return (
         <div>
             <Header />
-            <div className="wrapper">
+            <div className="wrapper search-wrapper">
                 <SearchForm
                     updateBookList={setBookList}
                 />

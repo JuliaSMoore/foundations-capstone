@@ -7,11 +7,31 @@
 }
 
 .carousel-slider {
-    width: 25% !important;
+    width: 50% !important;
     margin: auto !important;
 }
 
 .control-dots {
     padding-top: 30px !important;
     margin-top: 10px !important;
+}
+
+.carousel-root {
+    background-color: #c8bfae62;
+    border-radius: 20px;
+    padding: 15px;
+    padding-top: 30px;
+    max-width: 70vw;
+    margin: auto;
+    box-shadow: 5px 5px 10px #928465;
+    border: solid 1px #9b7351
+}
+
+.thumbs {
+    margin: auto;
+    padding: 0;
+}
+
+.image {
+    border-radius: 15px;
 }

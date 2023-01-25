@@ -8,9 +8,11 @@ const List = ({bookList}) => {
                 bookList.map((element) => {
                     return <div key={element.id} className="book-container">
                         <img className="cover" src={element.cover} ></img>
-                        {element.title}
-                        {element.description}
-                        {element.tags}
+                        <div className="search-info">
+                        <div className="search-title">{element.title}</div>
+                        <div>{element.description}</div>
+                        <div>{element.tags}</div>
+                        </div>
                     </div> 
                 })
                 

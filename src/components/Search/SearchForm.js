@@ -1,5 +1,5 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
-import "./SearchForm";
+import "./SearchForm.css";
 import axios from "axios";
 
 const SearchForm = ({ updateBookList }) => {
@@ -57,8 +57,8 @@ const SearchForm = ({ updateBookList }) => {
   };
 
   return (
-    <div>
-      <h1>Search</h1>
+    <div >
+      <div className="search-form">
       <div>
         <label>Title</label>
         <br />
@@ -66,7 +66,8 @@ const SearchForm = ({ updateBookList }) => {
       </div>
       <div>
         <label>Tags</label>
-        <br />
+      <div className="tag-search">
+        <span className="tag-label">
         <input
           type="checkbox"
           className="tags"
@@ -75,7 +76,8 @@ const SearchForm = ({ updateBookList }) => {
           onChange={onFantasyTagChange}
         />
         <label htmlFor="fantasy">Fantasy</label>
-        <br />
+        </span>
+        <span className="tag-label">
         <input
           type="checkbox"
           className="tags"
@@ -84,7 +86,8 @@ const SearchForm = ({ updateBookList }) => {
           onChange={onSiFiTagChange}
         />
         <label htmlFor="si-fi">Si-Fi</label>
-        <br />
+        </span>
+        <span className="tag-label">
         <input
           type="checkbox"
           className="tags"
@@ -93,7 +96,9 @@ const SearchForm = ({ updateBookList }) => {
           onChange={onRomanceTagChange}
         />
         <label htmlFor="romance">Romance</label>
-        <br />
+        </span>
+      </div>
+      </div>
       </div>
     </div>
   );

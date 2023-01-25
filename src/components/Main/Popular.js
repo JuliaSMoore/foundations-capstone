@@ -27,20 +27,25 @@ const [popularBooks, setPopularBooks] = useState('')
     return (
         <div className="popular">
             <HeadContainer>
-                <h1>Popular</h1>
+                <span className="block-title">Popular</span>
                 <a className="see-all" href="#">See All</a>
             </HeadContainer>
-            <div>
+            <div className="popular-books">
             
             { popularBooks &&
                 popularBooks
                 .filter((books) => {return books.tags.includes("Popular")})
                 .map((element) => {
-                    return <div key={element.id} className="book-container" onClick={() => {readPageHandler(element.id)}}>
-                        <img className="cover" src={element.cover} ></img>
+                    return <div key={element.id} className="popular-container" >
+                        <img className="cover" src={element.cover} onClick={() => {readPageHandler(element.id)}}></img>
+                        <span className="name-description">
+                            <span className="book-title">
                         {element.title}
+                        </span>
+                        <span className="book-description">
                         {element.description}
-                        {element.tags}
+                        </span>
+                        </span>
                     </div> 
                 })
                 

@@ -1,5 +1,6 @@
 .left-blocks {
     width: 70vw;
+    margin: auto;
 }
 
 .award-rec {
@@ -7,4 +8,8 @@
     justify-content: space-around;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.popular {
+    margin: auto;
 }

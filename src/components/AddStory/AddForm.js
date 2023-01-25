@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import './AddForm.css'
+
 
 const AddForm = () => {
   const [title, setTitle] = useState("");

@@ -1,0 +1,16 @@
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.tag-search {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.tag-label {
+    padding-right: 20px;
+}

@@ -18,7 +18,7 @@ const Reader = (props) => {
 return (
     <div className="wrapper">
         <div className="reader-title">{book.title}</div>
-        <div className="reader-cover">{book.cover}</div>
+        <div className="reader-cover"><img className="cover" src={book.cover} ></img></div>
         <div className="reader-description">{book.description}</div>
         <div className="reader-tags">{book.tags}</div>
         <div className="reader-content">{book.content}</div>

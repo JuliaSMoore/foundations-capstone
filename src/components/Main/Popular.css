@@ -3,4 +3,55 @@
     min-height: 300px;
     width: 90%;
     margin: auto;
+    font-size: 1vw;
+  }
+
+  .popular-books {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+  }
+
+  .popular-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .name-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 7vw;
+  }
+
+  .book-title {
+    max-width: 11vw;
+    word-wrap: break-word;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: auto;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    min-height: 2.6vw;
+  }
+
+  .book-description {
+    max-width: 11vw;
+    text-align: center;
+    word-wrap: break-word;
+    margin:auto;
+    border-top: solid 1px #382d16;
+    padding: 5px;
+    font-size: 0.8vw;
+  }
+
+  .block-title {
+    font-weight: bold;
+    font-size: 1.5vw;
   }
